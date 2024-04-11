@@ -1,0 +1,466 @@
+  
+   *{
+    box-sizing: border-box;
+   }
+   
+   /* servises */
+   .Serveces{
+    display: inline-block;
+    font-size: 70px;
+      position: relative;
+      left: 50%;
+      top:  0%;
+      transform: translate(-50%,10%);
+      color: #eee;
+     font-weight: bold;
+
+  }
+  #concat{
+  
+  }
+  #concat::after{
+
+    content: 'we are born to react';
+    left: 20%;
+    top: 55%;
+  }
+  .Serveces::after{
+ content: 'less is more work ';
+ position: absolute;
+ font-size: 14px;
+ width: 300px;
+ top: 70%;
+ left: calc(50% - 100px);
+ font-weight: normal;
+color: black;  }
+
+ #portfolio::after{
+  content: "you do it reight,it will last for erver";
+  left:10%;
+ }
+ #about::after{
+  left: 20%;
+  top: 60%;
+ }
+   /* end servesis */
+   /* header */
+   .circle1{
+ width: 40px;
+ height: 40px;
+ border: 6px solid #13b3b8;
+ border-radius: 50%;
+ position: relative;
+   }
+   
+   .circle1::before{
+    display: block;
+     content: '';
+     width: 5px;
+     height: 40px;
+     background-color: black;
+     position: absolute;
+     left: -70%;
+     top: -10%;
+
+   }
+  
+
+   .hoverd span:nth-child(1){
+    
+    background-color: black;
+    width: 40px;
+    height: 5px;
+    position: absolute;
+     left: calc(100% - 40px);
+     top: 50%;
+    
+   }
+
+   .container.parent span:hover{
+    transition: 0.3s;
+    width: 50px;
+    left: calc(100% - 50px);
+   }
+
+ 
+   .hoverd span:nth-child(2){
+    background-color: black;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    left: calc(100% - 50px);
+    top: 40%;
+    
+   }
+
+   .hoverd span:nth-child(3){
+    background-color: black;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    left: calc(100% - 50px);
+top: 60%;
+    
+   }
+ div span{
+    background-color: black;
+ }
+   
+
+   .container.parent{
+display: flex;
+ justify-content: space-between;
+ position: relative;
+ max-height: 80px;
+
+   }
+  p a{
+     color: black;
+  
+     text-decoration:none;
+
+   }
+
+
+.hoverd:hover   .list.parent , .hoverd:hover #shm{
+     display: flex;
+transition: 0.3s;
+        justify-content: center;
+        align-items: center;
+
+    }
+ 
+
+    #shm{
+         
+     border: 20px solid gray;
+     border-top:20px solid white ;
+     border-left: 20px solid white;
+     border-right:  20px solid white ;
+display: none;    
+       }
+   
+   .list.parent{
+    position: absolute;
+    top: 100px;
+    left: calc(100% - 200px) ;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    background-color: gainsboro;
+    width: 200px;
+    height: 50px;
+    width: 200px;
+display: none;    
+} 
+#a1{
+transform: translate(0,-100%);
+}
+#a2{
+    transform: translate(0,0%);
+}
+#a3{
+    transform: translate(0,100%);
+    }
+    #a4{
+        transform: translate(0,200%);
+    }
+
+
+   .list.parent:not(:last-child){
+ border-bottom: 2px solid gray;
+   }
+   
+   /* header */
+
+   /* image and heelo */
+
+
+ .hello{
+    display: block;
+    width: 200px;
+    margin: auto;
+ 
+
+   } 
+ .we.are.leon{
+    display: block;
+    width: 320px;
+    height: 20px;
+
+    text-align: center;
+     margin: auto;
+     margin-top: 30px;
+     
+}
+
+.im{
+  width: 100%;
+  margin: 0px;
+    height : 250px;
+    background-image: url(/images-templete1/mount.png);
+    background-size: 100% 100%;
+
+
+ }
+   /* end image and hello */
+   /* Dimond */
+  
+   .dimond i {
+    font-size: 50px;
+   }
+   .hi{
+    font-size: 13px;
+   }
+ .dimond{
+  position: relative;
+  padding-top: 50px;
+
+  display: grid;
+  text-align: center;
+
+  
+  grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+
+gap: 100px;
+
+ }
+ .dimond::after{
+  content: '';
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  box-shadow: 0px 1px 1px 0px gray;
+  left: calc(50% - 200px);
+  top: 110%;
+  
+ }
+
+   /* end Dimond */
+   /* skills */
+   .container .img-small-mount{
+   
+    align-self: center;
+    background-image: url(/images-templete1/small\ mount.png);
+    grid-column: 5/6;
+    grid-row: 1/5;
+height:  95%;
+    background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+      
+  }
+
+  .container .img-small-mount::after {
+    content: '';
+    width: 100px;
+    height :130%;
+    background-color: #243f51;
+    z-index: -1;
+    position: absolute;
+    left: 80%;
+    top: -15%; 
+}
+ .container .skills{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr 5fr 2fr;
+  grid-template-rows: 50px 1.5fr 50px 1.5fr;
+  column-gap: 10px;
+  gap: 20px;
+ }
+ .container .skills i{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+
+ .container .skills i:nth-child(1){
+  grid-column: 1/2;
+  
+ 
+ }
+  .container .skills div:nth-child(2){
+ grid-column: 2/3;
+ grid-row: 1/3;
+
+}
+.container .skills i:nth-child(3){
+  grid-column: 3/4;
+  
+ 
+ }
+ .container .skills div:nth-child(4){
+  grid-column: 4/5;
+  grid-row: 1/3;
+ 
+ }
+ .container .skills i:nth-child(5){
+  grid-row: 3/4;
+  
+ 
+ }
+ .container .skills div:nth-child(6){
+  grid-column: 2/3;
+  grid-row: 3/4;
+ 
+ }
+ .container .skills i:nth-child(7){
+  grid-column: 3/4;
+  grid-row: 3/4;
+  
+ 
+ }
+ .container .skills div:nth-child(8){
+  grid-column: 4/5;
+  grid-row: 3/5;
+ 
+ }
+
+
+.container .skills div p:nth-child(1){
+  font-weight: bold;
+}
+.container .skills  i {
+
+  font-size: 30px;
+}
+#second-container{
+
+}
+
+
+
+
+ /*end skills */
+ .project{
+
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(490px,1fr)) ;
+  text-align: center;
+  margin-left: 50px;
+
+ }
+  .project  {
+
+     
+
+}
+  .project div img:nth-child(1){
+    width: 300px;
+    height: 300px;
+  }
+  .project div p:nth-child(2){
+    font-weight: bold;
+  }
+ /* end projects */
+ /*start buket  */
+ .buket{
+ 
+  display: flex;
+  width : 100%;
+  justify-content: space-around;
+ }
+ .ayasho::after{
+  content: '';
+  width: 300px;
+  height: 80px;
+  background-color: #13b3b8;
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top : 80%;
+  left: 50%;
+ }
+ .ayasho::before{
+  content: '';
+  width: 80px;
+  height: 500px;
+  background-color: #13b3b8;
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top : -10%;
+  left: 90%;
+ }
+ .ayasho{
+  background-image: url(/images-templete1/كوارة.png);
+  width : 300px;
+  background-size: 100% 100%;
+  margin: 100px;
+  height: 500px;
+  margin: auto;
+  
+  position: relative;
+ }
+ .buket div:not(.ayasho){
+height: 100%;
+width: 500;
+ line-height: 56px;
+}
+.kwara{
+  width: 90%;
+margin: 100px;
+}
+@media (max-width:1250px){
+  .buket{
+ 
+    display: flex;
+    width : 100%;
+    justify-content: center;
+flex-direction: column;   }
+}
+.buket div p{
+  text-align: center;
+}
+.buket div {
+  margin: auto;
+}
+.final
+{
+  width: 100%;
+  padding-left: 20%;
+}
+.final p:nth-child(1){
+  font-size: 30px;
+  color: #243f51;
+}
+.final p:nth-child(2){
+  color: #13b3b8;
+}
+.web{
+  display:flex;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+
+
+ /* end buket */
+    .container{
+        padding: 20px;
+
+        margin: auto;
+    }
+     /*  small  */
+    @media (min-width:992px) {
+        .container{
+            width: 970px;
+        }
+    }
+    /* medim */
+    @media (min-width:1200px) {
+        .container{
+            width: 970px;
+        }
+    }
+    /* large */
+    @media (min-width:1200px) {
+        .container{
+            width: 1170px;
+        }
+    }
+    
